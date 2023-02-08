@@ -1,0 +1,1755 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/*General*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%; /*1rem = 1px*/
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section {
+    /*min-height: 100vh;*/
+    padding: 12rem 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+ 
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+
+h5 {
+    font-size: 2.4rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+    box-shadow: .3rem .3rem 1rem .1rem rgba(0, 0, 0, 0.596)
+}
+/*End of General*/
+/*Header*/
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 10rem;
+    position: fixed;
+    z-index: 5;
+    background-color: #fff;
+    transition: .3s;
+}
+
+header.scrollEffect {
+    background-color: #232323;
+    padding: 1.5rem 10rem;
+    transition: .3s;
+    box-shadow: .3rem .3rem 1rem .1rem rgba(0, 0, 0, 0.596); /*x y blur spread color*/
+}
+
+nav {
+    position: relative;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #responsiveMenu {
+    display: none;
+}
+
+#navigation {
+    display: flex;
+    justify-content: start;
+}
+
+
+#navigation a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin-right: 5rem;
+    color: #000;
+    font-weight: 600;
+    transition:.5s;
+    transform: scale(1);
+    
+}
+
+#navigation a:hover {
+    transition: .3s;
+    transform: scale(1.2);
+}
+
+header.scrollEffect #navigation a {
+    color: #fff;
+    transition: .5s;
+}
+
+#btnContactUs {
+   padding: .5rem 2rem;
+   background-color: #fff;
+   cursor: pointer;
+   color: #000;
+   border-radius: .5rem;
+   font-weight: 700;
+}
+
+#btnContactUs:hover {
+   background-color: #000;
+   color: #fff;
+   transition: .2s;
+}
+
+header.scrollEffect #btnContactUs {
+    background-color: #232323;
+    color:#fff;
+    border-color: #fff;
+    transition: .5s;
+}
+
+header.scrollEffect #btnContactUs:hover {
+    background-color: #fff;
+    color:#232323;
+    transition: .2s;
+}
+
+
+/*End of Header*/
+/*--- Main ---*/
+main {
+    width: 100%;
+    position: relative;
+}
+/*Banner*/
+#banner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 15rem 10rem;
+    position: relative;
+}
+
+#textBanner {
+    width: 38%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    position: relative;
+}
+
+#textBanner h1 {
+    margin-bottom: 2rem;
+    line-height: 7.5rem;
+    position: relative;
+}
+
+#btnReserve {
+    padding: .5rem 2rem;
+    background-color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    width: 40%;
+    position: relative;
+    left: 0;
+    border-radius: .5rem;
+    margin-top: 2.5rem;
+    bottom: 0;
+    transition: .3s;
+}
+
+#btnReserve:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#imgBanner {
+    width: 58%;
+}
+
+#imgBanner #imgBannerBox {
+    width: 100%;
+    height: 40rem;
+    position: relative;
+}
+/*End of Banner*/
+/*Call To Action - My Travels Log*/
+
+#ctaSection {
+    padding: 5rem 0;
+    background-color: #232323;
+    position: relative;
+}
+
+#ctaMyTravel {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #fff;
+}
+
+#ctaMyTravel h2 {
+    line-height: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+#ctaMyTravel p {
+    margin-bottom: 2rem;
+}
+
+#btnMyTravel {
+    padding: 1rem 2rem;
+    background-color: #232323;
+    cursor: pointer;
+    color: #fff;
+    width: 40%;
+    position: relative;
+    left: 0;
+    border-color: #fff;
+    border-radius: .5rem;
+    font-weight: 700;
+    transition: .3s;
+}
+
+#btnMyTravel:hover {
+    background-color: #fff;
+    color: #232323;
+    transition: .3s;
+}
+/*End of Call To Action - My Travels Log*/
+/*Travel Images*/
+.boxContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+    position: relative;
+}
+.boxTravel {
+    width: 30%;
+    position: relative;
+}
+
+.boxTravel .imageBox {
+    width: 100%;
+    height: 20rem;
+    position: relative;
+}
+
+.boxText .dividers {
+    width: 6rem;
+    border-top: 3px solid #000;
+    margin-top: 2.5rem;
+}
+
+.boxText h3 {
+    margin-top:2rem;
+    line-height: 3.2rem;
+}
+
+.boxText p {
+    margin-top: 2rem;
+    text-align: justify;
+}
+/*End of Travel Images*/
+/*See Places*/
+#seePlaces .imageBox {
+    width: 5rem;
+    height: auto;
+}
+
+#seePlaces .imageBox img {
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+}
+
+#seePlaces h2 {
+    font-size: 7rem;
+    margin-top: 6rem;
+}
+
+#boxSeePlaces {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 18rem;
+}
+
+.box1, .box2 {
+    width: 48%;
+}
+
+.box1 .imageBox1{
+    width: 100%;
+    height: 65rem;
+    position: relative;
+}
+
+.box1 .imageBox1 img{
+    height: 80%;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.box2 .imageBox2{
+    width: 70%;
+    height: 28rem;
+    position: relative;
+}
+
+.box2 .textBox2 {
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box2 .textBox2 .textBox2H4 {
+    width: 38%;
+}
+
+.box2 .textBox2 .textBox2H4 h4 {
+    line-height: 3.5rem;
+}
+
+.box2 .textBox2 .textBox2P {
+    width: 58%;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.box2 .textBox2 .textBox2P p {
+    line-height: 2rem;
+}
+
+.box2 .arrowBox2{
+    width: 20%;
+    height: 6rem;
+    position: relative;
+    align-self: flex-end;
+}
+
+.box2 .arrowBox2.responsive {
+    display: none;
+}
+
+.box2 .arrowBox2 img {
+    box-shadow: none;
+    cursor: pointer;
+}
+/*End of See Places*/
+/*Choose Anywhere*/
+#chooseAnywhere {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #232323;
+    color: #fff;
+    padding: 12rem 0;
+    padding-left: 10rem;
+}
+
+#chooseAnywhere .box1 {
+    width: 34%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#chooseAnywhere .box1 h2 {
+    line-height: 4rem;
+    letter-spacing: .3rem;
+    margin-bottom: 8rem;
+}
+
+#chooseAnywhere .box1 h5 {
+    margin-bottom: .5rem;
+}
+
+#chooseAnywhere .box1 p {
+    margin-bottom: 5rem;
+    line-height: 2.2rem;
+}
+
+#chooseAnywhere .box2 {
+    width: 58%;
+}
+
+#chooseAnywhere .box2 .imageBox2 {
+    width: 100%;
+    height: 50rem;
+    position: relative;
+}
+/*End of Choose Anywhere*/
+/*Choose you Pack of Travel*/
+#packOfTravel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#packOfTravel .box1 {
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    height: 50rem;
+}
+
+#packOfTravel .box1 h2 {
+    position: relative;
+    font-size: 6rem;
+    line-height: 6rem;
+}
+
+#packOfTravel .box1 #accordionBox {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#packOfTravel .box2 {
+    width: 38%;
+}
+
+#packOfTravel .box2 .imageBox2 {
+    width: 100%;
+    height: 50rem;
+    position: relative;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    padding:1.8rem;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: .3s;
+    text-align: left;
+    border-top: .2rem #232323 solid;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.painel {
+    padding: 0 1.8rem;
+    background-color: #fff;
+    display: none; /*hidden by default*/
+    text-align: justify;
+}
+/*End of Choose you Pack of Travel*/
+/*Here's what they have to say*/
+#hereIs {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+#hereIs h3 {
+    font-size: 6rem;
+    text-align: center;
+}
+
+#testimonyBox {
+    width: 90%;
+    height: 40rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#testimonyBox .leftBtn, #testimonyBox .rightBtn  {
+    border: 1px solid #232323;
+    border-radius: 1rem;
+    /*width: 10vw;*/
+    /*height: 100%;*/
+    position: absolute;
+    /*top: 0;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 3;
+    font-size: 5rem;
+    opacity: .2;
+    padding: .7rem 1rem;
+    color: #232323
+}
+
+#testimonyBox .leftBtn:hover, #testimonyBox .rightBtn:hover {
+    opacity: 1;
+}
+
+#testimonyBox .leftBtn {
+    left: 0;
+    /*background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #fff 100%);*/
+}
+
+#testimonyBox .rightBtn {
+    right: 0;
+    /*background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);*/
+}
+
+
+#testimonyBox .customerContainer {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    justify-content: space-between;
+}
+
+#testimonyBox .customerContainer::-webkit-scrollbar {
+    display:none;
+}
+
+#testimonyBox .customerContainer .customerCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 28%;
+    height: 35rem;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    padding: 4rem;
+    position: relative;
+    flex: 0 0 auto;
+    margin-left: 4rem;
+    box-shadow: .3rem .3rem 1rem .1rem rgba(0, 0, 0, 0.281)
+}
+
+#testimonyBox .customerContainer .customerCard .pictureBox {
+    width: 12rem;
+    height: 12rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000;
+    position: relative;
+    margin-bottom: 1rem;
+    border-radius: 10rem;
+    margin-bottom: 4rem;
+}
+
+#testimonyBox .customerContainer .customerCard .pictureBox .fa-solid {
+    color:#fff;
+    font-size: 8rem;
+    line-height: 16rem;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#testimonyBox .customerContainer .customerCard h5 {
+    margin-bottom: 1.5rem;
+}
+
+#testimonyBox .customerContainer .customerCard p {
+    font-size: 1.4rem;
+    font-style: italic;
+}
+/*End of Here's what they have to say*/
+/*Be update*/
+#beUpdate {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#beUpdate .form {
+    width: 38%;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+#beUpdate .form h4{
+    font-size: 5rem;
+    position: relative;
+}
+
+#beUpdate .form #formBox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#beUpdate .form #formBox .block {
+    display:block;
+}
+
+#beUpdate .form #formBox form .boxInput {
+    width: 100%;
+    position: relative;
+}
+
+#beUpdate .form #formBox form .boxInput input, #beUpdate .form #formBox form .boxInput textarea {
+    width: 80%;
+    border: 1px solid #000;
+}
+
+#beUpdate .form #formBox form .boxInput input {
+    margin-bottom: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+}
+
+#beUpdate .form #formBox form .boxInput textarea {
+    margin-bottom: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+}
+
+#beUpdate .form #formBox form .boxInput.inputBtn input {
+    cursor: pointer;
+    transition: .5s;
+    background-color: #000;
+    color: #fff;
+    width: 80%;
+    height: 5rem;
+    border-radius: .5rem;
+    font-size: 1.8rem;
+}
+
+#beUpdate .form #formBox form .boxInput.inputBtn input:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#beUpdate .imageBox {
+    width: 58%;
+    height: 50rem;
+    position: relative;
+}
+/*End of Be update*/
+/*---- End of Main ----*/
+/*Footer*/
+footer {
+    width: 100%;
+    background-color: #c4c4c4;
+    color: #232323;
+    padding: 10rem 10rem; 
+}
+
+#informationsBox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#informationsBox h2 {
+    width: 22%;
+    font-size: 4.5rem;
+    line-height: 5rem;
+}
+
+#informationsBox #quickLinks {
+    width: 74%;
+}
+
+#informationsBox #quickLinks h5 {
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+#informationsBox #quickLinks #linksBox {
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#informationsBox #quickLinks #linksBox .boxLinks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#informationsBox #quickLinks #linksBox .boxLinks a {
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: #232323;
+    font-size: 1.6rem;
+    transition:.5s;
+    transform: scale(1);
+
+}
+
+#informationsBox #quickLinks #linksBox .boxLinks a:hover {
+    transition: .3s;
+    transform: scale(1.05);
+
+}
+
+#endFooter p{
+    text-align: center;
+    margin-top: 10rem;
+}
+/*End of Footer*/
+/*Responsive Design*/
+
+@media (min-width: 1400px) {
+    header {
+        max-width: 150rem;
+    }
+
+    main {
+        max-width: 150rem;
+    }
+
+    #testimonyBox {
+        max-width: 150rem;
+    }
+
+    footer {
+        max-width: 150rem;
+    }
+}
+
+@media (max-width: 1200px) {
+   /*General*/
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 2.9rem;
+    }
+
+    h4 {
+        font-size: 2.3rem;
+    }
+    /*End of General*/
+    /*Main*/
+    /*Banner*/
+    #textBanner h1 {
+    line-height: 5.6rem;
+    }
+
+    #btnReserve {
+        padding: 0.5rem 1rem;
+    }
+    /*End of Banner*/
+    /*See Places*/
+    .box1 .imageBox1 img {
+    height: 100%;
+    }
+
+    .box2 .textBox2 .textBox2P p {
+        line-height: 2rem;
+    }
+
+    .box2 .arrowBox2 {
+        height: 3rem;
+    }
+
+    /*End of See Places*/
+    /*Choose Anywhere*/
+    #chooseAnywhere .box1 h2 {
+        letter-spacing: .2rem;
+        margin-bottom: 3rem;
+    }
+    #chooseAnywhere .box1 p {
+        margin-bottom: 3rem;
+    }
+    /*End of Choose Anywhere*/
+    /*Here is*/
+    #testimonyBox .customerContainer .customerCard .pictureBox {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    #testimonyBox .customerContainer .customerCard {
+        padding: 2rem;
+    }
+
+    #testimonyBox .customerContainer .customerCard .pictureBox .fa-solid {
+        color: #fff;
+        font-size: 8rem;
+        line-height: 15rem;
+    }
+    /*End of Here is*/
+    /*Be Update*/
+    #beUpdate .form h4 {
+        font-size: 4rem;
+    }
+    /*End of Be Update*/
+    /*End of Main*/
+}
+
+@media (max-width: 1000px) {
+    /*General*/
+
+    h1 {
+        font-size: 4rem;
+    
+    }
+    p {
+        font-size: 1.6rem;
+    }
+    /*End of General*/
+    /*Banner*/
+    #btnReserve {
+        padding: 1rem 2rem;
+        width: 50%;
+    }
+    /*End of Banner*/
+    /*See Places*/
+    #seePlaces h2 {
+        font-size: 6rem;
+        line-height: 7rem;
+        margin-top: 3rem;
+    }
+
+    #pSeePlaces {
+        font-size: 1.8rem;
+        margin-top: 2rem;
+    }
+
+    #boxSeePlaces .box2 .imageBox2 {
+        width: auto;
+    }
+
+    #boxSeePlaces .box2 .imageBox2 img {
+        object-fit: contain;
+        box-shadow: none;
+    }
+
+    .box2 .textBox2 .textBox2H4 h4 {
+        line-height: 2.5rem;
+        font-size: 1.8rem;
+    }
+
+    .box2 .textBox2 .textBox2P p {
+        line-height: 2.2rem;
+    }
+    /*End of See Places*/
+    /*Choose your pack*/
+
+    #packOfTravel .box1 {
+        height: 40rem;
+    }
+    #packOfTravel .box1 h2 {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
+    #packOfTravel .box2 .imageBox2 {
+        height: 40rem;
+    }
+    /*End of Choose your pack*/
+    /*Be Update*/
+    #beUpdate .imageBox {
+        height: 45rem;
+    }
+
+    #beUpdate .form h4 {
+        font-size: 3.5rem;
+    }
+    /*End of Be Update*/
+    /*Footer*/
+    #informationsBox h2 {
+        width: 22%;
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    /*End of Footer*/
+}
+
+@media (max-width: 920px) {
+    
+    /*End of General*/
+    /*Banner*/
+    #btnReserve {
+        padding: 1rem 2rem;
+        width: 50%;
+    }
+    /*End of Banner*/
+}
+
+@media (max-width: 768px) { 
+    /*General*/
+    h1 {
+        font-size: 7rem;
+    }
+
+    h2 {
+        font-size: 6rem
+    }
+
+    h3{
+        font-size: 4rem;
+        }
+
+    h4 {
+        font-size: 3.5rem;
+    }
+
+    h5 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.8rem
+    }
+
+    section {
+        padding: 4rem 8rem;
+    }
+
+    /*End of General*/
+    /*Header*/
+    header {
+        padding: 3rem 8rem;
+        transition: .5s;
+    }
+
+    header.scrollEffect {
+        padding: 2rem 8rem;
+        box-shadow: .3rem .3rem 1rem .1rem rgba(0, 0, 0, 0.596);
+        transition: .5s;
+    }
+
+    #navigation, #btnContactUs{
+        display: none;
+    }
+
+    header #responsiveMenu {
+        width: 100%;
+        font-size: 6rem;
+        color: #000;
+        transition: .5s;
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    main #sideNav {
+        background-color: rgba(255, 255, 255, 0.911);
+        width: 60vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: .5s;
+        transform: translateX(-60vw)
+        
+    }
+
+    main #sideNav.responsiveActived {
+        transform: translateX(0)
+       
+    }
+
+    main #sideNav.scrollEffect {
+        background-color: #232323;
+        transition: .5s;
+    }
+
+    main #sideNav #optionsMenuResponsive {
+        font-size: 4rem;
+        color: #000;
+        width: 100%;
+        position: relative;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 0 4rem;
+    }
+
+    main #sideNav.scrollEffect #optionsMenuResponsive {
+        color:#fff;
+    }
+
+    
+
+    main #sideNav #optionsMenuResponsive .option {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    main #sideNav #optionsMenuResponsive .option:hover {
+        padding-left: 2rem;
+        border-bottom: 1px solid #232323;
+    }
+
+    main #sideNav #optionsMenuResponsive .option a{
+        text-decoration: none;
+        color: #000;
+        margin-left: 3rem;
+        font-size: 2rem;
+    }
+
+   
+
+    main #sideNav.scrollEffect #optionsMenuResponsive .option a{
+        color:#fff;
+    }
+
+    main #sideNav #optionsMenuResponsive #contactUsResponsive{
+        width: 100%;
+        margin-top: 4rem;
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        border-radius: .5rem;
+        border: none;
+        background-color: #232323;
+        color: #fff;
+        transform: scale(1);
+        transition: .3s;
+    }
+
+    main #sideNav #optionsMenuResponsive #contactUsResponsive:hover {
+        transform: scale(1.1)
+    }
+
+    main #sideNav.scrollEffect #optionsMenuResponsive #contactUsResponsive {
+        border: 1px solid #232323;
+        background-color: #fff;
+        color: #232323;
+        font-weight: 700;
+    }
+
+    header.scrollEffect #responsiveMenu{
+        color: #fff;
+        transition: .5s;
+    }
+
+
+    /*End of Header*/
+    /*Main*/
+    main {
+        margin-bottom: 10rem;
+    }
+    /*End of Main*/
+    /*Banner*/
+    #banner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    #banner #textBanner{
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        padding: 3rem 8rem;
+        margin-top: 15rem;
+    }
+
+    #banner #textBanner h1 {
+        margin-top: 2rem;
+        font-size: 7rem;
+        line-height: 8rem;
+    }
+
+    #banner #textBanner p{
+        margin-top: 1.5rem;
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+
+    #btnReserve { 
+        width: 80%;
+        margin-top: 4rem;
+        padding: 1rem 4rem;
+        font-size: 3rem;
+    }
+
+    
+    #imgBanner {
+        width: 100%;
+        margin-top: 6rem;
+    }
+
+    #imgBanner #imgBannerBox {
+        height: 60rem;
+    }
+    /*End of Banner*/
+    /*Cta - My Travel Logs*/
+    #ctaMyTravel {
+        width: 100%;
+        padding: 3rem 8rem;
+    }
+
+    #ctaMyTravel h2 {
+        line-height: 6rem;
+        margin-bottom: 3rem;
+    }
+
+    #btnMyTravel {
+        width: 80%;
+        margin-top: 2rem;
+        padding: 1rem 4rem;
+        font-size: 3rem;
+    }
+    /*End of Cta - My Travel Logs*/
+    /*Travel Images*/
+    .boxContainer {
+        flex-direction: column;
+    }
+
+    .boxTravel {
+        width: 100%;
+    }
+
+    .boxTravel .imageBox {
+        height: 40rem;
+        margin-top: 6rem;
+    }
+
+    .boxText {
+        text-align: center;
+    }
+
+    .boxText .dividers {
+        display: none;
+    }
+
+    .boxText h3 {
+        margin-top: 3rem;
+        line-height: 4rem;
+    }
+
+    .boxText p {
+        text-align: center;
+    }
+    /*End of Travel Images*/
+    /*See Places*/
+
+    #seePlaces {
+        padding: 0;
+    }
+  
+    #seePlaces .imageBox {
+        width: 30rem;
+    }
+
+    #seePlaces .imageBox img {
+        height: auto;
+        margin-top: 10rem;
+    }
+
+    #seePlaces h2 {
+        line-height: 7rem;
+        text-align: center;
+        margin-top: 10rem;
+    }
+
+    #seePlaces #pSeePlaces {
+        padding: 0 8rem;
+    }
+
+    #seePlaces p {
+        font-size: 2rem;
+        margin-top: 3rem;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    #boxSeePlaces {
+        display: flex;
+        flex-direction: column;
+        margin-top: 6rem;
+        padding: 0;
+        width: 100%;
+    }
+
+    #boxSeePlaces .box1, #boxSeePlaces .box2 {
+        width: 100%;
+        margin-top: 10rem;
+    }
+
+    #boxSeePlaces .box2 {
+        flex-direction: column-reverse;
+        
+    }
+
+    #boxSeePlaces .box2 .imageBox2 {
+        width: 100%;
+        height: 40rem;
+    }
+
+    #boxSeePlaces .box2 .imageBox2 img {
+        object-fit: cover;
+    }
+
+    #boxSeePlaces .box2 .textBox2 {
+        flex-direction: column;
+        padding: 0 8rem;
+    }
+
+    #boxSeePlaces .box2 .textBox2 .textBox2H4 {
+        width: 100%;
+    }
+
+    #boxSeePlaces .box2 .textBox2 .textBox2H4 h4 {
+        line-height: 4rem;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #boxSeePlaces .box2 .textBox2 .textBox2P {
+        width: 100%;
+    }
+
+    #boxSeePlaces .box2 .textBox2 .textBox2P p {
+        line-height: 2rem;
+    }
+
+    #boxSeePlaces .box2 .arrowBox2{
+        display: none;
+    }
+    
+    #boxSeePlaces .box2 .arrowBox2.responsive {
+        display: block;
+    }
+
+    #boxSeePlaces .box2 .arrowBox2.responsive {
+        width: 25%;
+        height: auto;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+        padding-right: 8rem;
+    }
+    /*End of See Places*/
+    /*Choose Anywhere*/
+    #chooseAnywhere {
+        flex-direction: column;
+        padding: 4rem 8rem;
+    }
+
+    #chooseAnywhere .box1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #chooseAnywhere .box1 h2 {
+        font-size: 5rem;
+        line-height: 5rem;
+        margin-top: 5rem;
+    }
+
+    #chooseAnywhere .box1 h5 {
+        margin-bottom: 1.5rem;
+    }
+
+    #chooseAnywhere .box2 {
+        width: 100%;
+        margin-bottom: 8rem;
+    }
+    /*End of Choose Anywhere*/
+    /*Choose your Pack Travel*/
+    #packOfTravel {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #packOfTravel .box1 {
+        width: 100%;
+        justify-content: center;
+        padding: 4rem 8rem;
+        height: auto;
+    }
+
+    #packOfTravel .box1 h2 {
+        text-align: center;
+        margin-top: 10rem;
+    }
+
+    #packOfTravel .box1 #accordionBox {
+        margin-top: 6rem;
+    }
+
+    #packOfTravel .box1 #accordionBox .accordion {
+        font-size: 2rem;
+    }
+
+    #packOfTravel .box2 {
+        width: 100%;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+
+    #packOfTravel .box2 .imageBox2 {
+        height: 96rem;
+    }
+    /*End of Choose your Pack Travel*/
+    /*Here is*/
+    #hereIs h3 {
+        line-height: 6rem;
+    }
+
+    #testimonyBox {
+        width: 90%;
+        height: auto;
+        margin-bottom: 15rem;
+    }
+
+    #testimonyBox .leftBtn, #testimonyBox .rightBtn {
+        width: 10vw;
+        height: 100%;
+        z-index: 4;
+        opacity: .2;
+        border: none;
+    }
+
+    #testimonyBox .leftBtn{
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    }
+
+    #testimonyBox .rightBtn{
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    }
+
+    #testimonyBox .customerContainer {
+        margin-top: 8rem;
+    }
+
+    #testimonyBox .customerContainer .customerCard {
+        width: 60%;
+        height: 50rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+   
+    /*End of Here is*/
+    /*Be Update*/
+    #beUpdate {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    #beUpdate .imageBox {
+        width: 100%;
+    }
+
+    #beUpdate .form {
+        width: 100%;
+        padding: 3rem 8rem;
+        margin-top: 10rem;
+    }
+
+    #beUpdate .form h4 {
+        font-size: 7rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    #beUpdate .form #formBox form .boxInput input {
+        padding: 2rem 2rem;
+        width: 100%;
+    }
+
+    #beUpdate .form #formBox form .boxInput textarea {
+        padding: 2rem 2rem;
+        width: 100%;
+    }
+
+    #beUpdate .form #formBox form .boxInput.inputBtn input {
+        width: 100%;
+        height: 7rem;
+        line-height: 3rem;
+        font-size: 3rem;
+    }
+    /*End of Be Update*/
+    /*Footer*/
+    footer {
+        margin-top: 20rem;
+
+    }
+    #informationsBox {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #informationsBox h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #informationsBox #quickLinks {
+        display: none;
+    }
+    /*End of Footer*/
+}
+
+@media(max-width: 600px) {
+    /*Banner*/
+    #banner #textBanner h1 {
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+
+    #imgBanner{
+       margin-top: 0;
+    }
+
+    #imgBanner #imgBannerBox {
+    height: auto;
+    }
+
+    #imgBanner #imgBannerBox img {
+        object-fit: contain;
+    }
+    /*See Places*/
+    #seePlaces h2 {
+        font-size: 4.3rem;
+        line-height: 5rem;
+    }
+
+    #seePlaces .imageBox {
+        width: 20rem;
+    }
+    /*End of See Places*/
+    /*End of Banner*/
+    /*CTA*/
+    #ctaMyTravel h2 {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+    /*End of CTA*/
+    /*Choose Anywhere*/
+    #chooseAnywhere .box1 h2 {
+        font-size: 4.4rem;
+    }
+
+    #chooseAnywhere .box2 .imageBox2 {
+    height: auto;
+    }
+    /*End of Choose Anywhere*/
+    /*See Places*/
+    .box1 .imageBox1 img{
+        object-fit: cover;;
+    }
+    /*End of See Places*/
+
+    /*Here is*/
+    #hereIs h3 {
+        line-height: 4rem;
+        font-size: 4rem;
+    }
+    /*End of Here is*/
+    /*Pack of Travel*/
+    #packOfTravel .box2 .imageBox2 {
+        height: auto;
+    }
+
+    img {
+        object-fit: contain;
+        box-shadow: none;
+    }
+    /*End of Pack of Travel*/
+    /*Be Update*/  
+
+    #beUpdate .imageBox img {
+    object-fit: cover;
+    }
+
+    #beUpdate .form {
+        margin-top: 4rem;
+    }
+
+    #beUpdate .form h4 {
+        font-size: 6rem;
+    }
+    /*End of Be Update*/
+    /*Footer*/
+    footer {
+        padding: 3rem 8rem;
+        margin-top: 15rem;
+    }
+
+    #informationsBox h2 {
+        line-height: 4rem;
+    }
+
+    #endFooter p {
+        /* text-align: center; */
+        margin-top: 3rem;
+    }
+    /*End of Footer*/
+}
+
+@media (max-width: 500px) {
+    /*General*/
+    section {
+        padding: 2rem 4rem;
+    }
+    /*End of General*/
+    /*Header*/
+    header {
+        padding: 2rem 4rem;
+    }
+
+    header.scrollEffect {
+        padding: 1rem 4rem;
+    }
+
+    header #responsiveMenu #toggleMenu {
+        font-size: 5rem;
+    }
+    /*End of Header*/
+    /*Banner*/
+    #banner #textBanner h1 {
+        font-size: 4.7rem;
+        line-height: 4rem;
+    }
+
+    #banner #textBanner {
+        padding: 2rem 4rem;
+    }
+
+    #btnReserve {
+        font-size: 2.4rem;
+    }
+
+    #imgBanner #imgBannerBox {
+        height: auto;
+    }
+    /*End of Banner*/
+    /*CTA*/
+    #ctaMyTravel h2 {
+        font-size: 3.8rem;
+        line-height: 4rem;
+    }
+
+    #btnMyTravel {
+        font-size: 1.8rem;
+    }
+    /*End of CTA*/
+    /*Travel Images*/
+    .boxTravel .imageBox {
+        height: auto;
+    }
+    /*End of Travel Images*/
+    /*See Places*/
+    #seePlaces h2 {
+        font-size: 3.8rem;
+        line-height: 4rem;
+    }
+
+    #boxSeePlaces .box1, #boxSeePlaces .box2 {
+        margin-top: 0;
+    }
+    /*End of See Places*/
+    /*Choose Anywhere*/
+    #chooseAnywhere {
+        padding: 2rem 4rem;
+    }
+
+    #chooseAnywhere .box1 h2 {
+        font-size: 4rem;
+    }
+
+    #chooseAnywhere .box2 {
+        margin-bottom: 8rem;
+    }
+
+    #chooseAnywhere .box2 .imageBox2 {
+        height: auto;
+    }
+    /*End of Choose Anywhere*/
+    /*Pack of Travel*/
+    #packOfTravel .box1 {
+        padding: 2rem 4rem;
+     }
+    /*End of Pack of Travel*/
+    /*Here is*/
+    #testimonyBox .customerContainer .customerCard {
+        height: auto;
+    }
+    /*End of Here is*/
+    /*Be Update*/
+
+    #beUpdate .form {
+        padding: 2rem 4rem;
+    }
+
+    #beUpdate .form h4 {
+        font-size: 5rem;
+    }
+
+    #beUpdate .form #formBox form .boxInput.inputBtn input {
+        font-size: 2.8rem;
+    }
+    /*End of Be Update*/
+    /*Footer*/
+    footer {
+        margin-top: 10rem;
+    }
+    /*End of Footer*/
+}
+
+@media (max-width: 440px) {
+  
+    /*Be Update*/
+    #beUpdate .form {
+        padding: 1rem 4rem;
+    }
+    
+    #beUpdate .form h4 {
+        font-size: 4rem;
+    }
+    /*End of Be Update*/
+}
+
+@media (max-width: 391px) {
+    /*Banner*/
+    #btnReserve {
+        font-size: 2rem;
+    }
+    /*End of Banner*/
+    /*CTA*/
+    #btnMyTravel {
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+    }
+    /*End of CTA*/
+    /*Responsive Menu*/
+    main #sideNav #optionsMenuResponsive #contactUsResponsive {
+        font-size: 1.8rem;
+    }
+    /*End of Responsive Menu*/
+    /*See Places*/
+    #seePlaces h2 {
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+    }
+    /*End of See Places*/
+}
+
+@media (max-width: 330px) {
+    /*General*/
+        h3 {
+        font-size: 3rem;
+    }
+    /*End of General*/
+    /*Responsive Menu*/
+    main #sideNav #optionsMenuResponsive .option a {
+        margin-left: 2rem;
+    }
+
+    main #sideNav #optionsMenuResponsive #contactUsResponsive {
+        font-size: 1.3rem;
+    }
+    /*End Responsive Menu*/
+    /*Cta*/
+    #ctaMyTravel {
+        padding: 1rem 4rem;
+    }
+    /*End of Cta*/
+    /*See Places*/
+    #seePlaces h2 {
+        font-size: 2.7rem;
+        line-height: 3rem;
+    }
+    
+    #seePlaces p {
+        font-size: 1.8rem;
+    }
+    /*End of See Places*/
+    /*Testimony*/
+    #testimonyBox .customerContainer {
+        margin-top: 6rem;
+    }
+
+    #testimonyBox .customerContainer .customerCard {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    #testimonyBox .customerContainer .customerCard .pictureBox {
+        width: 8rem;
+        height: 8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #testimonyBox .customerContainer .customerCard h5 {
+        font-size: 2.8rem;
+        line-height: 2.5rem;
+    }
+
+    #testimonyBox .customerContainer .customerCard .pictureBox .fa-solid {
+        font-size: 6rem;
+        line-height: 11rem;
+    }
+    /*End of Testimony*/
+}
+/*End of Responsive Design*/
