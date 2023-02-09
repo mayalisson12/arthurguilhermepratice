@@ -1,17 +1,18 @@
-const productCard = document.querySelectorAll(".productCard");
-const preBtn = document.querySelector(".preBtn");
-const nextBtn = document.querySelector(".nextBtn");
-const sizeCard = productCard[1].offsetWidth;
+const productContainer = document.querySelectorAll(".productContainer");
+const prevBtn = document.querySelectorAll(".prevBtn");
+const nextBtn = document.querySelectorAll(".nextBtn");
 
+productContainer.forEach((card, i) => {
+    let containerDimensions = card.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
 
-nextBtn.addEventListener("click", moveToRight)
+    nextBtn[i].addEventListener("click", () => {
+        card.scrollLeft += containerWidth;
+    })
 
-function moveToRight(card) {
-    card.scrollLeft +=sizeCard;
-};
-
-function moveToRight(card) {
-    card.scrollLeft +=sizeCard;
-}
-
+    prevBtn[i].addEventListener("click",() => {
+        card.scrollLeft -= containerWidth;
+    })
+});
+   
 //9:56
