@@ -15,4 +15,3 @@ productContainer.forEach((card, i) => {
     })
 });
    
-//9:56

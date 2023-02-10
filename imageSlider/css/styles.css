@@ -16,7 +16,7 @@ html {
 
 
 h1 {
-    font-size: 5rem;
+    font-size: 3.5rem;
    text-align: center;
    
 }
@@ -25,7 +25,8 @@ h1 {
 .product {
     position: relative;
     overflow: hidden;
-    padding: 2rem;
+    padding: 1rem;
+    margin-top: -2rem;
 }
 
 .productCategory {
@@ -42,6 +43,7 @@ h1 {
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smoth;
+    margin-top: -2rem;
 }
 
 .productContainer::-webkit-scrollbar {
