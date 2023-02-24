@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="mainContainer">
+        <div id="addContainer">
+            <h2>Adicione suas tarefas</h2>
+            <form action="">
+                <input type="text" id="task" name="task" placeholder="O que você tem para fazer?"/>
+                <button id="add" type="button">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </form>
+        </div>
+        <div id="tasksContainer">
+            <h2>Veja as suas tarefas:</h2>
+            <!--Template-->
+            <div class="task hide">
+                <i class="fa-solid fa-check taskDone"></i>
+                <span class="taskTitle">Título da Tarefa</span>
+                <i class="fa-solid fa-trash taskTrash hide"></i>
+            </div>
+            <!--End of Template-->
+            <div id="emptyTask">Não há tarefas cadastradas.</div>
+        </div>
+    </div>
+    
+
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/7dd89e9631.js" crossorigin="anonymous"></script>
+</body>
+</html>
